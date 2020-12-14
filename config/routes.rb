@@ -19,6 +19,10 @@ Rails.application.routes.draw do
   # ユーザー削除
   post "users/:id/destroy" => "users#destroy"
 
+  # ログイン
+  get "login" => "users#login_form"
+  post "login" => "users#login"
+
 # 投稿画面----------------------------------------------------------
 
   # 投稿一覧
